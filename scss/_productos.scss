@@ -1,0 +1,75 @@
+.contenedor_productos{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "prod_01 prod_02 prod_03"
+    "prod_04 prod_05 prod_06";
+    margin-bottom: 5%;
+                     p{
+        font-size: 160%;
+        text-align: center;
+                       }
+}
+
+.prod_01{
+    
+    grid-area: prod_01;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.prod_02{
+    grid-area: prod_02;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.prod_03{
+    grid-area: prod_03;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.prod_04{
+    grid-area: prod_04;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.prod_05{
+    grid-area: prod_05;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.prod_06{
+    grid-area: prod_06;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.pics{
+    width: 75%;
+    margin: 18%;
+    border-radius: 3%;
+}
+

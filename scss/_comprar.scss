@@ -1,0 +1,41 @@
+.encabezado_comprar{
+    display: block;
+    text-align: center;
+    font-size: 270%;
+    font-weight: 400;
+    background-color: white;
+    padding: 20px 10px;
+}
+
+.lista_comprar{
+    list-style-image: url(../images/icono_estrella3.png);
+    font-size: 235%;
+    text-align: left;
+    background-color: white;
+    margin: 3% 15%;
+                li{
+    padding: 1% 1%;
+                   }
+}
+
+.lista_medios{
+    list-style-image: url(../images/pago2.png);
+    font-size: 235%;
+    text-align: left;
+    background-color: white;
+    margin: 3% 15%;
+               li{
+    padding: 1% 1%;
+                  }
+}
+
+.condicion_cambio{
+    list-style-image: url(../images/cambio2.png);
+    font-size: 235%;
+    text-align: left;
+    background-color: white;
+    margin: 3% 15%;
+                 li{
+    padding: 1% 1%;
+                    }
+}
