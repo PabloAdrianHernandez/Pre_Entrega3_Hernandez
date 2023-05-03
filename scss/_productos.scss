@@ -6,14 +6,13 @@
     "prod_01 prod_02 prod_03"
     "prod_04 prod_05 prod_06";
     margin-bottom: 5%;
-                     p{
+    p{
         font-size: 160%;
         text-align: center;
-                       }
+        }
 }
 
 .prod_01{
-    
     grid-area: prod_01;
     display: flex;
     flex-direction: column;
