@@ -35,15 +35,11 @@
     text-align: center;
     font-size: 270%;
     font-weight: 400;
-    background-color: #bde0fe;
+    background-color: $color_dos;
     padding: 20px 10px;
 }
 
 .parrafo_2{
-    display: block;
-    text-align: center;
-    font-size: 270%;
-    font-weight: 400;
-    background-color: #ffc8dd;
-    padding: 20px 10px;
+    @extend .parrafo_1;
+    background-color: $color_uno;
 }

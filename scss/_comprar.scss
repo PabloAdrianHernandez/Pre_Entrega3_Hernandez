@@ -3,39 +3,27 @@
     text-align: center;
     font-size: 270%;
     font-weight: 400;
-    background-color: white;
+    background-color: $color_tres;
     padding: 20px 10px;
 }
 
 .lista_comprar{
-    list-style-image: url(../images/icono_estrella3.png);
     font-size: 235%;
     text-align: left;
-    background-color: white;
+    background-color: $color_tres;
     margin: 3% 15%;
+    list-style-image: url(../images/icono_estrella3.png);
     li{
         padding: 1% 1%;
         }
 }
 
 .lista_medios{
+    @extend .lista_comprar;
     list-style-image: url(../images/pago2.png);
-    font-size: 235%;
-    text-align: left;
-    background-color: white;
-    margin: 3% 15%;
-    li{
-        padding: 1% 1%;
-        }
 }
 
 .condicion_cambio{
+    @extend .lista_comprar;
     list-style-image: url(../images/cambio2.png);
-    font-size: 235%;
-    text-align: left;
-    background-color: white;
-    margin: 3% 15%;
-    li{
-        padding: 1% 1%;
-        }
 }

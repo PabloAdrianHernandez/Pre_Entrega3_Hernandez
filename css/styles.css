@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* ----------Variables---------- */
 /* ----------General---------- */
 * {
   margin: 0;
@@ -64,7 +65,7 @@ body {
   grid-area: section;
 }
 
-.parrafo_1 {
+.parrafo_1, .parrafo_2 {
   display: block;
   text-align: center;
   font-size: 270%;
@@ -74,12 +75,7 @@ body {
 }
 
 .parrafo_2 {
-  display: block;
-  text-align: center;
-  font-size: 270%;
-  font-weight: 400;
   background-color: #ffc8dd;
-  padding: 20px 10px;
 }
 
 /* ----------Footer, general a todas las páginas---------- */
@@ -173,7 +169,7 @@ body {
 .pics {
   width: 75%;
   margin: 18%;
-  border-radius: 3%;
+  border-radius: 4px;
 }
 
 /* ----------Comprar/Vender---------- */
@@ -186,41 +182,30 @@ body {
   padding: 20px 10px;
 }
 
-.lista_comprar {
-  list-style-image: url(../images/icono_estrella3.png);
+.lista_comprar, .condicion_cambio, .lista_medios {
   font-size: 235%;
   text-align: left;
   background-color: white;
   margin: 3% 15%;
+  list-style-image: url(../images/icono_estrella3.png);
 }
-.lista_comprar li {
+.lista_comprar li, .condicion_cambio li, .lista_medios li {
   padding: 1% 1%;
 }
 
 .lista_medios {
   list-style-image: url(../images/pago2.png);
-  font-size: 235%;
-  text-align: left;
-  background-color: white;
-  margin: 3% 15%;
-}
-.lista_medios li {
-  padding: 1% 1%;
 }
 
 .condicion_cambio {
   list-style-image: url(../images/cambio2.png);
-  font-size: 235%;
-  text-align: left;
-  background-color: white;
-  margin: 3% 15%;
-}
-.condicion_cambio li {
-  padding: 1% 1%;
 }
 
 /* ----------Nosotros---------- */
 .nosotros {
+  margin: 5% 1%;
+}
+.nosotros p {
   font-size: 220%;
   text-align: justify;
   background-color: white;
@@ -237,9 +222,9 @@ body {
   flex-direction: column;
   width: 45%;
   padding: 1% 1%;
-  margin: 6% auto;
+  margin: 5% auto;
   background-color: #ffc8dd;
-  border-radius: 3%;
+  border-radius: 4px;
 }
 .contacto form label {
   height: 35px;
@@ -252,9 +237,12 @@ body {
   border-radius: 4px;
 }
 .contacto form textarea {
+  padding: 2%;
   border: none;
   border-radius: 4px;
-} /* ----------Media queries---------- */
+}
+
+/* ----------Media queries---------- */
 @media screen and (max-width: 450px) {
   /* ----Header, general---- */
   .header_general ul {
@@ -278,7 +266,7 @@ body {
     font-size: 250%;
     text-align: center;
   }
-  .parrafo_1 {
+  .parrafo_1, .parrafo_2 {
     font-size: 170%;
   }
   .parrafo_2 {
@@ -293,13 +281,13 @@ body {
     margin-bottom: 5%;
   }
   .contenedor_productos p {
-    font-size: 130%;
+    font-size: 110%;
   }
   /* ----Comprar---- */
   .encabezado_comprar {
     font-size: 230%;
   }
-  .lista_comprar {
+  .lista_comprar, .lista_medios, .condicion_cambio {
     font-size: 190%;
   }
   .lista_medios {
@@ -309,7 +297,7 @@ body {
     font-size: 190%;
   }
   /* ----Nosotros---- */
-  .nosotros {
+  .nosotros p {
     font-size: 180%;
   }
   /* ----Contacto---- */
@@ -318,6 +306,9 @@ body {
   }
   .contacto form {
     width: 70%;
+  }
+  .contacto form label {
+    padding: 3%;
   }
 }
 

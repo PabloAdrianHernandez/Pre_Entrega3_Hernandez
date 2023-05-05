@@ -1,7 +1,7 @@
 .header_general{
             grid-area: header;
-            background-color: #ffc8dd;
-            border-bottom: solid 8px #bde0fe;
+            background-color: $color_uno;
+            border-bottom: solid 8px $color_dos;
             ul{
                 display: flex;
                 flex-direction: row;

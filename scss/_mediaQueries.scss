@@ -48,7 +48,7 @@
         "prod_05 prod_06";
         margin-bottom: 5%;
         p{
-            font-size: 130%;
+            font-size: 110%;
             }
     }
 
@@ -70,7 +70,7 @@
     }
 
     /* ----Nosotros---- */
-    .nosotros{
+    .nosotros p{
         font-size: 180%;
     }
 
@@ -79,6 +79,9 @@
         font-size: 160%;
         form{
             width:70%;
+            label{
+                padding: 3%;
+            }
         }
     }
 
