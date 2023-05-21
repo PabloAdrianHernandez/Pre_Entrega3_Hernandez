@@ -1,3 +1,9 @@
+.encabezado_contacto{
+    @extend .encabezado_comprar;
+    font-size: 150%;
+}
+
+
 .contacto{
     text-align: center;
     font-size: 190%;
@@ -6,7 +12,7 @@
         flex-direction: column;
         width:45%;
         padding: 1% 1%;
-        margin: 5% auto;
+        margin: 2% auto;
         background-color: $color_uno;
         border-radius: $borde_estandar;
         label{

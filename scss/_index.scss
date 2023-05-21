@@ -1,28 +1,32 @@
 .contenedor_index{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 0.3fr 0.1fr;
+    grid-template-rows: auto 1fr auto auto;
     grid-template-areas: 
     "header header"
     "main main"
     "section section"
     "footer footer";
-}
+    min-height: 100vh;
+
+}    
 
 .main_index{
     grid-area: main;
     display: flex;
     padding: 30px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    text-align: center;
     img{
         width: 45%;
-        padding: 10px 10px;
+        padding: 20px;
         }
     p{
-        font-size: 330%;
-        font-weight: 400;
-        padding: 10px 10px;
+        color: #845c19;
+        font-size: 360%;
+        font-weight: 700;
+        padding: 10px;
         }
 }
 
@@ -36,7 +40,7 @@
     font-size: 270%;
     font-weight: 400;
     background-color: $color_dos;
-    padding: 20px 10px;
+    padding: 3% 1%;
 }
 
 .parrafo_2{

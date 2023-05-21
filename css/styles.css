@@ -40,25 +40,28 @@ body {
 .contenedor_index {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.1fr 1fr 0.3fr 0.1fr;
+  grid-template-rows: auto 1fr auto auto;
   grid-template-areas: "header header" "main main" "section section" "footer footer";
+  min-height: 100vh;
 }
 
 .main_index {
   grid-area: main;
   display: flex;
   padding: 30px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 .main_index img {
   width: 45%;
-  padding: 10px 10px;
+  padding: 20px;
 }
 .main_index p {
-  font-size: 330%;
-  font-weight: 400;
-  padding: 10px 10px;
+  color: #845c19;
+  font-size: 360%;
+  font-weight: 700;
+  padding: 10px;
 }
 
 .section_index {
@@ -71,7 +74,7 @@ body {
   font-size: 270%;
   font-weight: 400;
   background-color: #bde0fe;
-  padding: 20px 10px;
+  padding: 3% 1%;
 }
 
 .parrafo_2 {
@@ -110,6 +113,7 @@ body {
 .contenedor_productos p {
   font-size: 160%;
   text-align: center;
+  margin: 1%;
 }
 
 .prod_01 {
@@ -168,16 +172,24 @@ body {
 
 .pics {
   width: 75%;
-  margin: 18%;
+  margin: 16% 12% 5% 12%;
   border-radius: 4px;
 }
 
 /* ----------Comprar/Vender---------- */
-.encabezado_comprar {
+.contenedor_secundario {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header header" "main main" "section section" "footer footer";
+  min-height: 100vh;
+}
+
+.encabezado_comprar, .encabezado_contacto {
   display: block;
   text-align: center;
   font-size: 270%;
-  font-weight: 400;
+  font-weight: 600;
   background-color: white;
   padding: 20px 10px;
 }
@@ -203,16 +215,26 @@ body {
 
 /* ----------Nosotros---------- */
 .nosotros {
-  margin: 5% 1%;
+  text-align: center;
+  margin: 4%;
+}
+.nosotros img {
+  width: 40%;
+  float: left;
+  padding: 2%;
 }
 .nosotros p {
   font-size: 220%;
   text-align: justify;
   background-color: white;
-  padding: 1% 2%;
+  padding: 1%;
 }
 
 /* ----------Contacto ---------- */
+.encabezado_contacto {
+  font-size: 150%;
+}
+
 .contacto {
   text-align: center;
   font-size: 190%;
@@ -222,7 +244,7 @@ body {
   flex-direction: column;
   width: 45%;
   padding: 1% 1%;
-  margin: 5% auto;
+  margin: 2% auto;
   background-color: #ffc8dd;
   border-radius: 4px;
 }
@@ -243,6 +265,61 @@ body {
 }
 
 /* ----------Media queries---------- */
+/* ----------Media queries para tablets---------- */
+@media screen and (max-width: 770px) {
+  /* ----Header, general---- */
+  .header_general ul {
+    font-size: 190%;
+  }
+  /* ----Index---- */
+  .main_index p {
+    font-size: 290%;
+  }
+  .parrafo_1, .parrafo_2 {
+    font-size: 220%;
+  }
+  .parrafo_2 {
+    font-size: 220%;
+  }
+  /* ----Productos----  */
+  .contenedor_productos p {
+    font-size: 135%;
+  }
+  /* ----Comprar---- */
+  .encabezado_comprar, .encabezado_contacto {
+    font-size: 250%;
+  }
+  .lista_comprar, .lista_medios, .condicion_cambio {
+    font-size: 210%;
+  }
+  .lista_medios {
+    font-size: 210%;
+  }
+  .condicion_cambio {
+    font-size: 210%;
+  }
+  /* ----Nosotros---- */
+  .nosotros img {
+    width: 50%;
+  }
+  .nosotros p {
+    font-size: 200%;
+  }
+  /* ----Contacto---- */
+  .encabezado_contacto {
+    font-size: 135%;
+  }
+  .contacto {
+    font-size: 175%;
+  }
+  .contacto form {
+    width: 60%;
+  }
+  .contacto form label {
+    padding: 3%;
+  }
+}
+/* ----------Media queries para móbiles---------- */
 @media screen and (max-width: 450px) {
   /* ----Header, general---- */
   .header_general ul {
@@ -284,7 +361,7 @@ body {
     font-size: 110%;
   }
   /* ----Comprar---- */
-  .encabezado_comprar {
+  .encabezado_comprar, .encabezado_contacto {
     font-size: 230%;
   }
   .lista_comprar, .lista_medios, .condicion_cambio {
@@ -297,10 +374,16 @@ body {
     font-size: 190%;
   }
   /* ----Nosotros---- */
+  .nosotros img {
+    width: 100%;
+  }
   .nosotros p {
     font-size: 180%;
   }
   /* ----Contacto---- */
+  .encabezado_contacto {
+    font-size: 125%;
+  }
   .contacto {
     font-size: 160%;
   }

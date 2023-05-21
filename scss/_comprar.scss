@@ -1,8 +1,20 @@
+.contenedor_secundario{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "section section"
+    "footer footer";
+    min-height: 100vh;
+}
+
 .encabezado_comprar{
     display: block;
     text-align: center;
     font-size: 270%;
-    font-weight: 400;
+    font-weight: 600;
     background-color: $color_tres;
     padding: 20px 10px;
 }

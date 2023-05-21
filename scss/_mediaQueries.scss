@@ -1,3 +1,81 @@
+/* ----------Media queries para tablets---------- */
+
+@media screen and (max-width: 770px){
+
+    /* ----Header, general---- */
+    .header_general ul{
+        font-size: 190%;
+    }
+    
+    /* ----Index---- */
+
+    .main_index{
+        p{
+        font-size: 290%;
+        }
+    }
+
+    .parrafo_1{
+        font-size: 220%;
+    }
+
+    .parrafo_2{
+        font-size: 220%;
+    }
+
+    /* ----Productos----  */
+    .contenedor_productos{
+        p{
+            font-size: 135%;
+            }
+    }
+
+    /* ----Comprar---- */
+    .encabezado_comprar{
+        font-size: 250%;
+    }
+
+    .lista_comprar{
+        font-size: 210%;
+    }
+
+    .lista_medios{
+        font-size: 210%;
+    }
+
+    .condicion_cambio{
+        font-size: 210%;
+    }
+
+    /* ----Nosotros---- */
+    .nosotros{
+        img{
+            width: 50%;
+        }
+        p{
+        font-size: 200%;
+        }
+    }
+
+    /* ----Contacto---- */
+    .encabezado_contacto{
+        font-size: 135%;
+    }
+
+    .contacto{
+        font-size: 175%;
+        form{
+            width:60%;
+            label{
+                padding: 3%;
+            }
+        }
+    }
+
+}
+
+/* ----------Media queries para móbiles---------- */
+
 @media screen and (max-width: 450px){
 
     /* ----Header, general---- */
@@ -70,11 +148,20 @@
     }
 
     /* ----Nosotros---- */
-    .nosotros p{
+    .nosotros{
+        img{
+            width: 100%;
+        }
+        p{
         font-size: 180%;
+        }
     }
 
     /* ----Contacto---- */
+    .encabezado_contacto{
+        font-size: 125%;
+    }
+
     .contacto{
         font-size: 160%;
         form{
@@ -84,6 +171,5 @@
             }
         }
     }
-
 
 }
